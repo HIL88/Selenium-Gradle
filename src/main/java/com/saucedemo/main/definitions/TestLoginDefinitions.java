@@ -28,7 +28,7 @@ public class TestLoginDefinitions {
 
     @Then("validamos que estemos en la pagina principal {string}")
     public void validamosQueEstemosEnLaPaginaPrincipal(String string) {
-
+        testLoginSteps.validarPaginaPrincipal(string);
     }
 
 }
