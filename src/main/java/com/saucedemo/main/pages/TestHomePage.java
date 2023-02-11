@@ -17,6 +17,7 @@ public class TestHomePage extends PageObject {
     public WebElementFacade producto4;
     @FindBy(xpath = "//*[contains(@class,'shopping_cart_link')]")
     public WebElementFacade btnshoping;
+
    /* @FindBy(xpath = "//select[@class='product_sort_container']")
     public WebElementFacade selectProductContainer;*/
 
@@ -37,13 +38,13 @@ public class TestHomePage extends PageObject {
 
     public void clickAgregarCompras() {
 
+        btnshoping.click();
+
         try {
             Thread.sleep(3000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
-        btnshoping.click();
 
     }
   /*  public void filtrarProductos(String value) {

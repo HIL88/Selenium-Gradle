@@ -8,6 +8,7 @@ public class TestHomePageSteps {
     TestHomePage testHomePage;
 
     public void clickAgregarProductos() {
+        
         testHomePage.clickAgregar();
     }
 

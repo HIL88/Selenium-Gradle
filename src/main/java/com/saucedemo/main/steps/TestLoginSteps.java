@@ -7,6 +7,8 @@ import org.hamcrest.MatcherAssert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.serenitybdd.core.Serenity.getDriver;
+
 public class TestLoginSteps {
     private static final Logger LOGGER = LoggerFactory.getLogger(TestLoginSteps.class);
     @Page
@@ -14,6 +16,8 @@ public class TestLoginSteps {
     public void openWeb() {
 
         testLoginPage.open();
+        getDriver().manage().window().maximize();
+
     }
 
     public void ingresarCredenciales(String username, String password) {
