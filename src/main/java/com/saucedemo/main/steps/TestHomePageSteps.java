@@ -14,6 +14,13 @@ public class TestHomePageSteps {
 
 
     public void agregarcompras() {
+
         testHomePage.clickAgregarCompras();
+    }
+
+    public void eliminarProducto() {
+
+        testHomePage.clickEliminarProducto();
+
     }
 }

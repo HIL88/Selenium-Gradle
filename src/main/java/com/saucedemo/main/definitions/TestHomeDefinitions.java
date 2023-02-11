@@ -24,6 +24,7 @@ public class TestHomeDefinitions {
     @Then("eliminar el producto del carrito")
     public void eliminarElProductoDelCarrito() {
 
+        testHomePageSteps.eliminarProducto();
     }
 
 }

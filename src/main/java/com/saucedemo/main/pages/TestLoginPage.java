@@ -4,10 +4,15 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DefaultUrl("https://www.saucedemo.com/")
+
+
 public class TestLoginPage extends PageObject {
+
     @FindBy(xpath = "//input[@id='user-name']")
     public WebElementFacade inputUserName;
 
@@ -28,12 +33,14 @@ public class TestLoginPage extends PageObject {
 
     public void clickBtnLogin() {
         try{
-            Thread.sleep(3000L);
+            Thread.sleep(2000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
 
         btnLogin.click();
+
+
     }
 
 

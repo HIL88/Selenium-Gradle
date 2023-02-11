@@ -6,8 +6,8 @@ import org.fluentlenium.core.annotation.Page;
 import org.hamcrest.MatcherAssert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import static net.serenitybdd.core.Serenity.getDriver;
+
 
 public class TestLoginSteps {
     private static final Logger LOGGER = LoggerFactory.getLogger(TestLoginSteps.class);
