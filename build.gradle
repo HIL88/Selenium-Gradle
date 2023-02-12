@@ -2,6 +2,7 @@ plugins {
     id 'java'
 }
 
+
 group 'com.saucedemo.test'
 version '1.0-SNAPSHOT'
 
@@ -27,6 +28,15 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.19.0'
+
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-reports-configuration
+    implementation group: 'net.serenity-bdd', name: 'serenity-reports-configuration', version: '3.6.12'
+
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-reports
+    implementation group: 'net.serenity-bdd', name: 'serenity-reports', version: '3.6.12'
+
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-stats
+    implementation group: 'net.serenity-bdd', name: 'serenity-stats', version: '3.6.12'
 
 
 }
