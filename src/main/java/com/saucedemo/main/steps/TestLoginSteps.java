@@ -33,5 +33,6 @@ public class TestLoginSteps {
 
     public void validarPaginaPrincipal( String string) {
         MatcherAssert.assertThat("PRODUCTS",string.contains(testLoginPage.validar.getText()));
+
     }
 }
