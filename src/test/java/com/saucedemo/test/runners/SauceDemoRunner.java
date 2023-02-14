@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features/test_login.feature",
         glue = "com.saucedemo.main.definitions",
         snippets=CucumberOptions.SnippetType.CAMELCASE
-        //tags = "@login"
+        //tags = "@AddToCart"
+
 )
 public class SauceDemoRunner {
 }

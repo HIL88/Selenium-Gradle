@@ -12,8 +12,8 @@ public class TestLoginDefinitions {
 
     @Given("el usuario ingrese a la pagina web")
     public void elUsuarioIngreseALaPaginaWeb() {
-        testLoginSteps.openWeb();
 
+        testLoginSteps.openWeb();
     }
 
     @When("el usuario ingresa las credenciales {string} {string}")

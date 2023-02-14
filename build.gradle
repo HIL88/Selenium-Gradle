@@ -1,34 +1,37 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin:'application'
 
-group 'com.saucedemo.test'
-version '1.0-SNAPSHOT'
+
+buildscript {
+
+    repositories{
+        mavenCentral()
+        jcenter()
+    }
 
 repositories {
     mavenCentral()
 }
 
+
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-
-    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core
-    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.6.12'
-
-    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-junit
-    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '3.6.12'
-
-    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-cucumber
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.9.2'
+    testImplementation group: 'org.apache.maven.plugins', name: 'maven-failsafe-plugin', version: '3.0.0-M8'
     testImplementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '3.6.12'
-
-    // https://mvnrepository.com/artifact/junit/junit
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
-
-    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    testImplementation('org.assertj:assertj-core:3.24.2')
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.6.12'
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '3.6.12'
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.19.0'
-
-
+    implementation group: 'net.serenity-bdd', name: 'serenity-reports-configuration', version: '3.6.12'
+    implementation group: 'net.serenity-bdd', name: 'serenity-reports', version: '3.6.12'
+    implementation group: 'net.serenity-bdd', name: 'serenity-stats', version: '3.6.12'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.8.0'
+    implementation group: 'org.apache.maven.plugins', name: 'maven-surefire-plugin', version: '3.0.0-M8'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.8.0'
 }
 
 test {
